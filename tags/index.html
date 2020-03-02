@@ -327,6 +327,10 @@
           
 
   
+      <div class="comments" id="comments">
+        <div id="gitalk-container"></div>
+      </div>
+  
 
 
 
@@ -632,6 +636,25 @@
 
 
 
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script type="text/javascript">
+      const gitalk = new Gitalk({
+        clientID: '892d23eb9ca8148b9547',
+        clientSecret: 'e24e67f77df5cbfb13ff812d243c23e23b06b4bf',
+        repo: 'gitalk',
+        owner: 'zombiesoull',
+        admin: 'zombiesoull'.split(','),
+        id: location.pathname,
+        // facebook-like distraction free mode
+        distractionFreeMode: 'true',
+        createIssueManually: 'true'
+      })
+      gitalk.render('gitalk-container')
+    </script>
+  
 
   
 
