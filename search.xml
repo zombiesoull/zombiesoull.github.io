@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>jsutForTest</title>
-    <url>/2020/03/01/Diary%20of%20birth/</url>
+    <title>Diaryofbirth</title>
+    <url>/2020/03/02/Diary%20of%20birth/</url>
     <content><![CDATA[<p>2020.03.01</p>
 <p>搭建hexo+github记录：基于<a href="https://www.jianshu.com/p/77db3862595c" target="_blank" rel="noopener">https://www.jianshu.com/p/77db3862595c</a></p>
 <p>之前在wins下搭建过一次 并不是很美观.. </p>
@@ -11,28 +11,28 @@
 <p>2.检查hexo所需环境，即：git ，node.js</p>
 <p>​    分别为：git –version    </p>
 <p>​                  node -v</p>
-<p>![image-20200301200755209](/Users/apple/Library/Application Support/typora-user-images/image-20200301200755209.png)</p>
+<p>![image-20200301200755209](Diary of birth/image-20200301200755209.png)</p>
 <p>3.创建一个126邮箱 <a href="mailto:zombiesoull@163.com">zombiesoull@163.com</a> 注册成github账户<br>4.new 一个 respository 用来部署hexo项目 注意：仓库名格式：github用户名+github.io</p>
 <p>​    <a href="https://github.com/zombiesoull/zombiesoull.github.io" target="_blank" rel="noopener">zombiesoull.github.io</a></p>
 <p>5.返回终端：npm install -g hexo-cli</p>
-<p>![image-20200301200720621](/Users/apple/Library/Application Support/typora-user-images/image-20200301200720621.png)</p>
+<p>![image-20200301200720621](Diary of birth/image-20200301200720621.png)</p>
 <p>6.在访问窗口进入文稿 创建新文件夹，名曰：hexo-blog</p>
-<p>![image-20200301200943030](/Users/apple/Library/Application Support/typora-user-images/image-20200301200943030.png)</p>
+<p>![image-20200301200943030](Diary of birth/image-20200301200943030.png)</p>
 <p>7.终端 cd hexo-blog进入该目录下</p>
 <p>8.开始部署hexo项目：</p>
 <p>运行命令 hexo init ，如图：</p>
-<p>![image-20200301201255456](/Users/apple/Library/Application Support/typora-user-images/image-20200301201255456.png)</p>
+<p>![image-20200301201255456](Diary of birth/image-20200301201255456.png)</p>
 <p>成功界面：</p>
-<p>![image-20200301201414066](/Users/apple/Library/Application Support/typora-user-images/image-20200301201414066.png)</p>
+<p>![image-20200301201414066](Diary of birth/image-20200301201414066.png)</p>
 <p>9.开启本地服务 hexo s</p>
-<p>![image-20200301201716578](/Users/apple/Library/Application Support/typora-user-images/image-20200301201716578.png)</p>
+<p>![image-20200301201716578](Diary of birth/image-20200301201716578.png)</p>
 <p>10.出现以下信息，说明你可以本地访问博客系统，在浏览器输入4000这个网址，就可以看到博客首页。</p>
-<p>![image-20200301201917028](/Users/apple/Library/Application Support/typora-user-images/image-20200301201917028.png)</p>
+<p>![image-20200301201917028](Diary of birth/image-20200301201917028.png)</p>
 <p>至此：说明环境已经没有问题了，成功了搭建起了hexo博客框架</p>
 <p>11.</p>
 <h1 id="二、博客关联到Github仓库"><a href="#二、博客关联到Github仓库" class="headerlink" title="二、博客关联到Github仓库"></a>二、博客关联到Github仓库</h1><p>1.生成静态页面 上传到之前的github 仓库里 </p>
 <p>首先我们要编辑图中_config.yml文件，这是博客的主要配置文件，在下面一部分，我们要频繁使用这个配置文件，这里先编辑一步，为了管理GitHub账号。</p>
-<p>![image-20200301205123635](/Users/apple/Library/Application Support/typora-user-images/image-20200301205123635.png)</p>
+<p>![image-20200301205123635](Diary of birth/image-20200301205123635.png)</p>
 <p>打开文件之后，在文档最后，输入红色大框中的内容，只需要将你的username替换就可以了，其他无需更改。</p>
 <figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repository:</span> <span class="string">https://github.com/zombiesoull/zombiesoull.github.io.git</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
 
@@ -45,7 +45,7 @@
 <p>备注：<br>在部署HEXO时出现ERROR Deployer not found : github的问题解决办法：<br>经过调查后才知道HEXO更新到3.0之后，deploy的type 的github需要改成git<br>但是还是不行  出现了 ERROR Deployer not found: git 的错误<br>后来经过调查之后 才知道 需要运行下这个指令才行<br>npm install hexo-deployer-git –save<br>然后就可以执行命令部署静态页面了<br>hexo g<br>hexo d</p>
 <p>2.基于网址：<br><a href="https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent" target="_blank" rel="noopener">https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent</a></p>
 <p>这一步 <a href="https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#generating-a-new-ssh-key" target="_blank" rel="noopener">生成新的SSH密钥</a> ps:passphrase为： 9783</p>
-<p>![image-20200301204515786](/Users/apple/Library/Application Support/typora-user-images/image-20200301204515786.png)</p>
+<p>![image-20200301204515786](Diary of birth/image-20200301204515786.png)</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Zombie-MBP:.ssh apple$ ssh-keygen -t rsa -C <span class="string">"zombiesouls@126.com"</span></span><br><span class="line">Generating public/private rsa key pair.</span><br><span class="line">Enter file <span class="keyword">in</span> <span class="built_in">which</span> to save the key (/Users/apple/.ssh/id_rsa): <span class="comment">#回车</span></span><br><span class="line">Enter passphrase (empty <span class="keyword">for</span> no passphrase): <span class="comment">#输入密码，可以为空，回车</span></span><br><span class="line">Enter same passphrase again: <span class="comment">#确认密码，可以为空，回车</span></span><br><span class="line">Your identification has been saved <span class="keyword">in</span> /Users/apple/.ssh/id_rsa. <span class="comment">#生成的密钥</span></span><br><span class="line">Your public key has been saved <span class="keyword">in</span> /Users/apple/.ssh/id_rsa.pub. <span class="comment">#生成的公钥</span></span><br><span class="line">The key fingerprint is:</span><br><span class="line">SHA256:sfA1CfE4xaUiC/iXh18qp+nq08diwOrbJajV7zo+zxE zombiesouls@126.com</span><br><span class="line">The key<span class="string">'s randomart image is:</span></span><br><span class="line"><span class="string">+---[RSA 2048]----+</span></span><br><span class="line"><span class="string">|        oo...    |</span></span><br><span class="line"><span class="string">|   .     =.o     |</span></span><br><span class="line"><span class="string">|  . . o = *      |</span></span><br><span class="line"><span class="string">|   . . B * .     |</span></span><br><span class="line"><span class="string">|   .. E S .      |</span></span><br><span class="line"><span class="string">|   oo. + o       |</span></span><br><span class="line"><span class="string">|  o.oo+.+        |</span></span><br><span class="line"><span class="string">| o..+=+*o        |</span></span><br><span class="line"><span class="string">|..o+*@Oo         |</span></span><br><span class="line"><span class="string">+----[SHA256]-----+</span></span><br><span class="line"><span class="string">Zombie-MBP:.ssh apple$</span></span><br></pre></td></tr></table></figure>
 
 <p>公钥 私钥 见另外目录</p>
