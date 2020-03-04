@@ -2,23 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite.com/tags/index.html</loc>
-    
-    <lastmod>2020-03-04T06:30:25.327Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://yoursite.com/about/index.html</loc>
     
-    <lastmod>2020-03-04T06:30:01.397Z</lastmod>
+    <lastmod>2020-03-04T06:37:08.977Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://yoursite.com/categories/index.html</loc>
     
-    <lastmod>2020-03-04T06:29:35.551Z</lastmod>
+    <lastmod>2020-03-04T06:36:53.150Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/tags/index.html</loc>
+    
+    <lastmod>2020-03-04T06:36:38.365Z</lastmod>
     
   </url>
   
